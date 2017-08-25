@@ -1,0 +1,25 @@
+{
+  "name": "blog-api-mongoose",
+  "version": "1.0.0",
+  "description": "blog-api",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahinkel421/blog-API.git"
+  },
+  "author": "Adam",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.2"
+  },
+  "bugs": {
+    "url": "https://github.com/ahinkel421/blog-API/issues"
+  },
+  "homepage": "https://github.com/ahinkel421/blog-API#readme"
+}
