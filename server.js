@@ -17,9 +17,9 @@ app.get('/posts', (req, res) => {
 		.then(posts => {
 			res.json({
 				posts: posts.map(
-					(post) => post.apiRepr());
+					(post) => post.apiRepr())
 			});
-		});
+		})
 		.catch(
 			err => {
 				console.error(err);
@@ -86,7 +86,7 @@ app.put('posts/:id', (req, res) => {
 	blogPost
 		findByIdAndUpdate(req.params.id, {$set: toUpdate})
 		.exec()
-		.then(post => res.status(200).json(post.apiRepr()));
+		.then(post => res.status(200).json(post.apiRepr()))
 		.catch(err => res.status(500).json({message: 'An error occurred. Please try again.'}));
 });
 
